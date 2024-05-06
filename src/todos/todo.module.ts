@@ -5,8 +5,8 @@ import { TodosController } from './todo.controller';
 import { TodosService } from './todo.service';
 
 @Module({
-  imports: [DatabaseModule],
-  controllers: [TodosController],
-  providers: [TodosService, ...todosProviders],
+	imports: [DatabaseModule],
+	controllers: [TodosController],
+	providers: [TodosService, ...todosProviders],
 })
 export class TodoModule {}
